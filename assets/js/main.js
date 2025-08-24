@@ -16,6 +16,7 @@
   resize();
 
   const chars = '01ΞλΣψΦΩ∑πµκχΔαβγδθηικλμνξοπρστυφω<>[]{}#$@%*&'.split('');
+  function isLight(){ return document.documentElement.classList.contains('light'); }
 
   function step(){
     if (reduceMotion) {
@@ -28,17 +29,17 @@
       }
       return;
     }
-    ctx.fillStyle = 'rgba(10,15,20,0.24)';
+  ctx.fillStyle = isLight() ? 'rgba(255,255,255,0.55)' : 'rgba(10,15,20,0.24)';
     ctx.fillRect(0, 0, w, h);
-
-    ctx.fillStyle = 'rgba(0,229,255,0.9)';
-    ctx.font = '16px monospace';
+  ctx.font = '16px monospace';
 
     for (let i = 0; i < ypos.length; i++){
       const text = chars[Math.floor(Math.random()*chars.length)];
       const x = i * 16;
       const y = ypos[i] * 16;
-      ctx.fillStyle = Math.random() > 0.975 ? 'rgba(255,0,234,0.9)' : 'rgba(0,229,255,0.9)';
+  const neonPrimary = isLight() ? 'rgba(0,102,255,0.85)' : 'rgba(0,229,255,0.9)';
+  const neonAlt = isLight() ? 'rgba(138,43,226,0.85)' : 'rgba(255,0,234,0.9)';
+  ctx.fillStyle = Math.random() > 0.975 ? neonAlt : neonPrimary;
       ctx.fillText(text, x, y);
 
       if (y > h && Math.random() > 0.975) ypos[i] = 0;

@@ -122,6 +122,17 @@ body {
 
 /* Hero */
 .hero-section { position: relative; /* min-height handled above */ display: grid; place-items: center; overflow: clip; }
+#matrixCanvas { mix-blend-mode: normal; }
+:root.light .hero-section {
+  background: radial-gradient(1200px 800px at 80% -10%, rgba(0,102,255,0.08), transparent),
+              radial-gradient(900px 580px at 10% 110%, rgba(138,43,226,0.09), transparent),
+              #f7fbff;
+}
+:root.light .hero-section::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.25) 40%, rgba(255,255,255,0));
+  mix-blend-mode: normal;
+}
 #matrixCanvas { position: absolute; inset: 0; width: 100%; height: 100%; background: transparent; }
 .hero-socials {
   display: flex;
@@ -170,6 +181,7 @@ body {
 .hero-tag { color: var(--text); opacity: 0.9; max-width: 840px; margin: 0 auto 22px; }
 .hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 .hero-scroll { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); color: var(--muted); opacity: 0.7; font-size: 0.9rem; }
+:root.light .hero-scroll { color: #4a6e81; opacity: 0.85; }
 
 /* Cards & Surfaces */
 .card { background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03)); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
