@@ -173,6 +173,10 @@ body {
 .card:hover { transform: translateY(-4px); border-color: rgba(0,229,255,0.35); box-shadow: 0 16px 40px rgba(0,229,255,0.12); }
 .card-body { padding: 16px; }
 .placeholder { background: repeating-linear-gradient(135deg, rgba(0,229,255,0.06), rgba(0,229,255,0.06) 12px, rgba(255,0,234,0.06) 12px, rgba(255,0,234,0.06) 24px); aspect-ratio: 16/9; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.card-media { position: relative; aspect-ratio: 16/9; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.1); background: linear-gradient(135deg, rgba(0,229,255,0.08), rgba(255,0,234,0.08)); display: flex; }
+.card-media img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(1.05) contrast(1.05); transition: transform .6s ease; }
+.card:hover .card-media img { transform: scale(1.05); }
+.card-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.45)); pointer-events: none; }
 
 /* Gallery images */
 .gallery-grid figure { position: relative; }

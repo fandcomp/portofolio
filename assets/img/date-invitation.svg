@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img">
+  <defs>
+    <linearGradient id="bgdate" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#08161c"/>
+      <stop offset="100%" stop-color="#112a33"/>
+    </linearGradient>
+    <style>
+      .card{fill:#0e2026;stroke:#00e5ff;stroke-width:2}
+      .line{stroke:#00e5ff;stroke-width:2;stroke-linecap:round;opacity:.5}
+      .heart{fill:#ff00ea;opacity:.7}
+      .text{fill:#d6efff;font:600 30px system-ui,Segoe UI,Arial}
+    </style>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgdate)"/>
+  <rect x="120" y="70" width="400" height="220" rx="20" class="card"/>
+  <text x="140" y="130" class="text">Invitation</text>
+  <path d="M140 150h160M140 170h200M140 190h180" class="line"/>
+  <g transform="translate(420 160)">
+    <path class="heart" d="M32 58c-14-10-24-18-24-30a14 14 0 0 1 26-7a14 14 0 0 1 26 7c0 12-10 20-24 30z"/>
+  </g>
+</svg>

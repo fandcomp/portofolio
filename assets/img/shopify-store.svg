@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img">
+  <defs>
+    <linearGradient id="bgshop" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#07171d"/>
+      <stop offset="100%" stop-color="#0e2730"/>
+    </linearGradient>
+    <style>
+      .panel{fill:#0d2026;stroke:#00e5ff;stroke-width:2}
+      .shelf{fill:#00e5ff;opacity:.18}
+      .tag{fill:#ff00ea;opacity:.6}
+      .txt{fill:#d6efff;font:600 32px system-ui,Segoe UI,Arial}
+    </style>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgshop)"/>
+  <rect x="70" y="60" width="500" height="240" rx="16" class="panel"/>
+  <text x="110" y="118" class="txt">Shop Dashboard</text>
+  <rect x="110" y="130" width="200" height="14" class="shelf"/>
+  <rect x="110" y="150" width="160" height="14" class="shelf"/>
+  <rect x="110" y="170" width="220" height="14" class="shelf"/>
+  <rect x="110" y="196" width="420" height="2" fill="#00e5ff" opacity=".35"/>
+  <g>
+    <rect x="120" y="210" width="90" height="70" rx="10" class="shelf"/>
+    <rect x="230" y="210" width="90" height="70" rx="10" class="shelf"/>
+    <rect x="340" y="210" width="90" height="70" rx="10" class="shelf"/>
+    <rect x="450" y="210" width="90" height="70" rx="10" class="shelf"/>
+    <circle cx="165" cy="246" r="10" class="tag"/>
+    <circle cx="275" cy="246" r="10" class="tag"/>
+    <circle cx="385" cy="246" r="10" class="tag"/>
+    <circle cx="495" cy="246" r="10" class="tag"/>
+  </g>
+</svg>

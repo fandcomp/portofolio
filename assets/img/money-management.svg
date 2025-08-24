@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img">
+  <defs>
+    <linearGradient id="bgfin" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#07171d"/>
+      <stop offset="100%" stop-color="#0e2730"/>
+    </linearGradient>
+    <style>
+      .panel{fill:#0d2026;stroke:#00e5ff;stroke-width:2}
+      .bar{fill:#00e5ff;opacity:.2}
+      .chart{stroke:#ff00ea;stroke-width:3;fill:none}
+      .dot{fill:#ff00ea}
+      .label{fill:#d6efff;font:600 30px system-ui,Segoe UI,Arial}
+    </style>
+  </defs>
+  <rect width="640" height="360" fill="url(#bgfin)"/>
+  <rect x="80" y="60" width="480" height="240" rx="16" class="panel"/>
+  <text x="120" y="118" class="label">Budget Overview</text>
+  <rect x="120" y="130" width="180" height="14" class="bar"/>
+  <rect x="120" y="150" width="220" height="14" class="bar"/>
+  <rect x="120" y="170" width="160" height="14" class="bar"/>
+  <g transform="translate(120 200)">
+    <path class="chart" d="M0 60 L60 40 L120 48 L180 20 L240 28 L300 12"/>
+    <circle class="dot" cx="0" cy="60" r="5"/>
+    <circle class="dot" cx="60" cy="40" r="5"/>
+    <circle class="dot" cx="120" cy="48" r="5"/>
+    <circle class="dot" cx="180" cy="20" r="5"/>
+    <circle class="dot" cx="240" cy="28" r="5"/>
+    <circle class="dot" cx="300" cy="12" r="5"/>
+  </g>
+</svg>
