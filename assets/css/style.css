@@ -86,6 +86,9 @@ body {
 
 /* Light mode readability */
 :root.light body { color: var(--text); background: radial-gradient(1200px 800px at 80% -10%, rgba(0,102,255,0.06), transparent), var(--bg); }
+:root.light .hero-title { color: #062234; text-shadow: 0 4px 18px rgba(0,0,0,0.08), 0 0 0 rgba(0,102,255,0.0); }
+:root.light .hero-tag { color: #1a3a4d; opacity: 0.92; }
+:root.light .eyebrow { color: #365e75; }
 :root.light .site-header { background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6)); border-bottom-color: rgba(0,0,0,0.08); }
 :root.light .nav li a { color: #0a1b2a; }
 :root.light .nav li a:hover { background: rgba(0,0,0,0.06); }
