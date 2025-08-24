@@ -448,9 +448,19 @@
     closeBtn?.focus();
   }
   function close(){
-    lb.hidden = true;
-    lb.setAttribute('aria-hidden','true');
-    document.body.style.overflow = '';
+    if(lb.hidden) return;
+    lb.classList.add('fade-out');
+    // After transition end hide
+    const done = () => {
+      lb.classList.remove('fade-out');
+      lb.hidden = true;
+      lb.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+      lb.removeEventListener('transitionend', done);
+    };
+    lb.addEventListener('transitionend', done);
+    // Fallback safety in case transitionend doesn't fire
+    setTimeout(done, 400);
   }
   function prev(){ open(idx - 1); }
   function next(){ open(idx + 1); }
