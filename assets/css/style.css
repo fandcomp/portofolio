@@ -421,6 +421,24 @@ main { position: relative; }
 /* Add extra breathing room at the bottom so footer never overlaps */
 main > section:last-of-type { padding-bottom: clamp(24px, 6vh, 96px); }
 
+/* Lightbox */
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.82); backdrop-filter: blur(6px); display: flex; align-items: center; justify-content: center; gap: 18px; padding: clamp(12px, 4vw, 48px); z-index: 200; }
+.lightbox[hidden] { display: none !important; }
+.lightbox-content { margin:0; max-width: min(92vw,1400px); max-height: 86vh; display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.lightbox-content img { max-width: 100%; max-height: calc(86vh - 60px); width: auto; height: auto; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(0,229,255,0.25); }
+.lightbox-content figcaption { color: var(--muted); font-size: 0.95rem; text-align: center; max-width: 100%; }
+.lightbox-close { position: absolute; top: 12px; right: 12px; background: rgba(255,255,255,0.08); color: var(--text); border: 1px solid rgba(255,255,255,0.18); width: 44px; height: 44px; border-radius: 50%; font-size: 1.4rem; display: grid; place-items: center; cursor: pointer; backdrop-filter: blur(6px); }
+.lightbox-close:hover { background: rgba(255,255,255,0.15); }
+.lightbox-nav { background: rgba(255,255,255,0.08); color: var(--text); border: 1px solid rgba(255,255,255,0.18); width: 54px; height: 54px; border-radius: 50%; font-size: 2.2rem; display: grid; place-items: center; cursor: pointer; transition: background .2s; backdrop-filter: blur(6px); }
+.lightbox-nav:hover { background: rgba(255,255,255,0.18); }
+.lightbox-nav.prev { order: 0; }
+.lightbox-nav.next { order: 2; }
+@media (max-width: 700px){
+  .lightbox { padding: 12px; }
+  .lightbox-nav { width: 46px; height: 46px; font-size: 1.8rem; }
+  .lightbox-close { width: 40px; height: 40px; }
+}
+
 /* Reveal on scroll animations */
 .reveal { opacity: 0; transform: translateY(18px); filter: blur(2px); transition: opacity .6s ease, transform .6s ease, filter .6s ease; }
 .reveal.in-view { opacity: 1; transform: translateY(0); filter: blur(0); }

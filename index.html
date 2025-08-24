@@ -9,7 +9,7 @@
     <meta property="og:description" content="Portfolio — Secure, AI-driven, and modern software development across web, mobile, desktop, scraping, and security." />
     <meta name="theme-color" content="#0ef" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs/%3E%3Cpath fill='%2300e5ff' d='M64 10a54 54 0 1 0 0 108a54 54 0 0 0 0-108Zm0 8a46 46 0 1 1 0 92a46 46 0 0 1 0-92Z'/%3E%3Cpath fill='%2300e5ff' d='M40 64L61 35l7 9l-14 20l14 20l-7 9zm48 0l-21 29l-7-9l14-20l-14-20l7-9z'/%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20250818b" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20250824a" />
   </head>
   <body>
     <a class="skip-link" href="#home">Skip to content</a>
@@ -194,51 +194,60 @@
             <article class="card reveal">
               <div class="card-media placeholder" aria-hidden="true"></div>
               <div class="card-body">
-                <h3>Modern Web App + Database</h3>
-                <p>Secure authentication, ORM, and audit logging in a full-stack web app.</p>
-                <div class="tags"><span>Web</span><span>Security</span><span>DB</span></div>
+                <h3>Chrono Wise Agent</h3>
+                <p>Agentic AI personal productivity assistant: schedules, summaries, secure note intelligence.</p>
+                <div class="tags"><span>AI</span><span>Agentic</span><span>Productivity</span></div>
                 <div class="card-actions">
-                  <a class="btn btn-ghost" href="#" aria-label="Demo project" title="Demo">Demo</a>
-                  <a class="btn btn-ghost" href="#" aria-label="Source code" title="Source">Source</a>
+                  <a class="btn btn-ghost" href="#" title="Demo">Demo</a>
+                  <a class="btn btn-ghost" href="#" title="Source">Source</a>
                 </div>
               </div>
             </article>
-
             <article class="card reveal">
               <div class="card-media placeholder" aria-hidden="true"></div>
               <div class="card-body">
-                <h3>Android App with Encryption</h3>
-                <p>User data protected with AES-GCM and biometric keystore.</p>
-                <div class="tags"><span>Android</span><span>Crypto</span></div>
+                <h3>Company Business Website</h3>
+                <p>Corporate profile site with secure contact pipeline and optimized SEO structure.</p>
+                <div class="tags"><span>Web</span><span>Corporate</span><span>SEO</span></div>
                 <div class="card-actions">
-                  <a class="btn btn-ghost" href="#">Demo</a>
-                  <a class="btn btn-ghost" href="#">Source</a>
+                  <a class="btn btn-ghost" href="#" title="Live">Live</a>
+                  <a class="btn btn-ghost" href="#" title="Repo">Repo</a>
                 </div>
               </div>
             </article>
-
             <article class="card reveal">
               <div class="card-media placeholder" aria-hidden="true"></div>
               <div class="card-body">
-                <h3>Web Scraping Toolkit</h3>
-                <p>Lightweight anti-bot bypass, proxy rotation, and CSV/JSON export.</p>
-                <div class="tags"><span>Scraping</span><span>Automation</span></div>
+                <h3>Shopify Web Store</h3>
+                <p>Custom Shopify storefront: theme customization, secure checkout enhancements, analytics.</p>
+                <div class="tags"><span>E‑Commerce</span><span>Shopify</span><span>Theme</span></div>
                 <div class="card-actions">
-                  <a class="btn btn-ghost" href="#">Demo</a>
-                  <a class="btn btn-ghost" href="#">Source</a>
+                  <a class="btn btn-ghost" href="#" title="Store">Store</a>
+                  <a class="btn btn-ghost" href="#" title="Code">Code</a>
                 </div>
               </div>
             </article>
-
             <article class="card reveal">
               <div class="card-media placeholder" aria-hidden="true"></div>
               <div class="card-body">
-                <h3>AI Mini-project: Secure Chatbot</h3>
-                <p>LLM guardrails, basic red-teaming, and prompt sanitization.</p>
-                <div class="tags"><span>AI</span><span>Security</span></div>
+                <h3>Date Invitation Web</h3>
+                <p>Interactive invitation microsite with timeline, RSVP capture, and lightweight animations.</p>
+                <div class="tags"><span>Microsite</span><span>Design</span><span>Interactive</span></div>
                 <div class="card-actions">
-                  <a class="btn btn-ghost" href="#">Demo</a>
-                  <a class="btn btn-ghost" href="#">Source</a>
+                  <a class="btn btn-ghost" href="#" title="Preview">Preview</a>
+                  <a class="btn btn-ghost" href="#" title="Assets">Assets</a>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-media placeholder" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Money Management Web</h3>
+                <p>Personal finance dashboard: budgeting, expense categorization, and encryption at rest.</p>
+                <div class="tags"><span>Finance</span><span>Dashboard</span><span>Security</span></div>
+                <div class="card-actions">
+                  <a class="btn btn-ghost" href="#" title="Demo">Demo</a>
+                  <a class="btn btn-ghost" href="#" title="Source">Source</a>
                 </div>
               </div>
             </article>
@@ -607,6 +616,17 @@
       </div>
     </footer>
 
-  <script src="assets/js/main.js?v=20250818c"></script>
+    <!-- Lightbox Modal for Gallery -->
+    <div class="lightbox" id="lightbox" hidden aria-hidden="true" aria-label="Image viewer" role="dialog">
+      <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
+      <button class="lightbox-nav prev" type="button" aria-label="Previous image">‹</button>
+      <figure class="lightbox-content">
+        <img id="lightboxImg" alt="" />
+        <figcaption id="lightboxCap"></figcaption>
+      </figure>
+      <button class="lightbox-nav next" type="button" aria-label="Next image">›</button>
+    </div>
+
+  <script src="assets/js/main.js?v=20250824a"></script>
   </body>
   </html>
