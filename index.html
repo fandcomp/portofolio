@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transforming Code into Secure & Intelligent Solutions</title>
+    <meta name="description" content="Portfolio — Secure, AI-driven, and modern software development across web, mobile, desktop, scraping, and security." />
+    <meta property="og:title" content="Transforming Code into Secure & Intelligent Solutions" />
+    <meta property="og:description" content="Portfolio — Secure, AI-driven, and modern software development across web, mobile, desktop, scraping, and security." />
+    <meta name="theme-color" content="#0ef" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs/%3E%3Cpath fill='%2300e5ff' d='M64 10a54 54 0 1 0 0 108a54 54 0 0 0 0-108Zm0 8a46 46 0 1 1 0 92a46 46 0 0 1 0-92Z'/%3E%3Cpath fill='%2300e5ff' d='M40 64L61 35l7 9l-14 20l14 20l-7 9zm48 0l-21 29l-7-9l14-20l-14-20l7-9z'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20250818b" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="logo">⟂</span>
+          <span class="brand-name">SecureDev</span>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
+          <ul id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#blog">Tech Blog</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#why-me">Why Hire Me</a></li>
+            <li><a href="#contact" class="btn btn-small">Hire Me</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="hero-section">
+        <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+        <div class="hero-socials">
+          <a href="https://instagram.com/ha_fandi" class="social-icon ig" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="9" fill="url(#ig-bg)"/><defs><radialGradient id="ig-bg" cx="0.7" cy="0.3" r="1.2"><stop stop-color="#f9ce34"/><stop offset="0.45" stop-color="#ee2a7b"/><stop offset="0.8" stop-color="#6228d7"/></radialGradient></defs><rect x="7" y="7" width="18" height="18" rx="5" stroke="#fff" stroke-width="2"/><circle cx="16" cy="16" r="5" stroke="#fff" stroke-width="2"/><circle cx="22.2" cy="9.8" r="1.2" fill="#fff"/></svg>
+          </a>
+          <a href="https://tiktok.com/@fine.di" class="social-icon tiktok" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="9" fill="#101820"/><path d="M21.5 10.5c.5 1.7 1.8 2.7 3.5 2.8v3.1c-1.2.1-2.3-.1-3.5-.6v5.7c0 3.2-2.2 4.9-4.7 4.9-2.2 0-4.3-1.3-4.7-4.1-.3-2.2.8-4.1 2.7-4.8.7-.2 1.5-.3 2.2-.2v2.7c-.4-.1-.8-.1-1.2.1-.7.3-1.1 1.1-1 1.8.2 1.1 1.2 1.5 2.1 1.5 1.1 0 2.1-.7 2.1-2.1v-12h3.5v2.2Z" fill="#fff"/><path d="M21.5 10.5c.5 1.7 1.8 2.7 3.5 2.8v3.1c-1.2.1-2.3-.1-3.5-.6v5.7c0 3.2-2.2 4.9-4.7 4.9-2.2 0-4.3-1.3-4.7-4.1-.3-2.2.8-4.1 2.7-4.8.7-.2 1.5-.3 2.2-.2v2.7c-.4-.1-.8-.1-1.2.1-.7.3-1.1 1.1-1 1.8.2 1.1 1.2 1.5 2.1 1.5 1.1 0 2.1-.7 2.1-2.1v-12h3.5v2.2Z" fill="#25F4EE" fill-opacity=".7"/><path d="M21.5 10.5c.5 1.7 1.8 2.7 3.5 2.8v3.1c-1.2.1-2.3-.1-3.5-.6v5.7c0 3.2-2.2 4.9-4.7 4.9-2.2 0-4.3-1.3-4.7-4.1-.3-2.2.8-4.1 2.7-4.8.7-.2 1.5-.3 2.2-.2v2.7c-.4-.1-.8-.1-1.2.1-.7.3-1.1 1.1-1 1.8.2 1.1 1.2 1.5 2.1 1.5 1.1 0 2.1-.7 2.1-2.1v-12h3.5v2.2Z" fill="#F60151" fill-opacity=".5"/></svg>
+          </a>
+        </div>
+        <div class="container hero-content reveal">
+          <p class="eyebrow">Transforming Code into Secure & Intelligent Solutions</p>
+          <h1 class="hero-title">Hanif Abdul Karim Afandi</h1>
+          <p class="hero-tag">Cryptography Engineering Student | Freelance Software Engineer | Secure & AI-driven Development Enthusiast</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Let’s Work Together</a>
+            <a href="#projects" class="btn btn-ghost">View Work</a>
+          </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">Scroll</div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title reveal">About Me</h2>
+            <p class="reveal">
+              I’m a 7th-semester student at the State Polytechnic of Cyber and Crypto (Politeknik Siber dan Sandi Negara), majoring in Cryptography Engineering with a focus on Secure Software Engineering. I build modern, intelligent, and security-first software with AI assistance.
+            </p>
+            <ul class="bullets reveal">
+              <li>Disciplined and research-driven</li>
+              <li>Comfortable working solo or in teams</li>
+              <li>Outcome-oriented</li>
+            </ul>
+            <div class="badges-inline reveal">
+              <span class="badge">Secure by Design</span>
+              <span class="badge">AI-driven</span>
+              <span class="badge">Full-stack</span>
+            </div>
+            <div class="about-card reveal">
+              <div class="about-stat">
+                <strong>3+</strong>
+                <span>Years exploring dev & security</span>
+              </div>
+              <div class="about-stat">
+                <strong>1</strong>
+                <span>Published paper</span>
+              </div>
+              <div class="about-stat">
+                <strong>10+</strong>
+                <span>Academic & freelance projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-side">
+            <figure class="profile-card reveal">
+              <div class="profile-frame">
+                <img src="assets/img/1.jpeg" alt="Portrait of Hanif Abdul Karim Afandi" loading="lazy" />
+                <span class="ring ring-1" aria-hidden="true"></span>
+                <span class="ring ring-2" aria-hidden="true"></span>
+                <span class="profile-glow" aria-hidden="true"></span>
+              </div>
+              <figcaption class="profile-caption">Hanif Abdul Karim Afandi</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Skills</h2>
+          <div class="skills-grid">
+            <article class="skill-card reveal" data-skill="Web Development" data-level="90">
+              <div class="icon"> 
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 3H5a2 2 0 0 0-2 2v3h2V5h3zm6 0h3a2 2 0 0 1 2 2v3h-2V5h-3zM3 16v3a2 2 0 0 0 2 2h3v-2H5v-3zM19 21a2 2 0 0 0 2-2v-3h-2v3h-3v2zM7 8l-4 4l4 4l1.4-1.4L6.8 12l1.6-2.6zM17 8l-1.4 1.4l1.6 2.6l-1.6 2.6L17 16l4-4zM10 17l4-10l-2-.8l-4 10z"/></svg>
+              </div>
+              <h3>Web Development (Fullstack)</h3>
+              <div class="progress-wrap">
+                <div class="progress-bar" style="--value: 90"></div>
+                <div class="progress-circle" style="--value: 90"><span>90%</span></div>
+              </div>
+            </article>
+
+            <article class="skill-card reveal" data-skill="Android" data-level="80">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8.1 3.5L6.7 2.1l-.8.8l1.4 1.4A6.98 6.98 0 0 0 6 8h12a6.98 6.98 0 0 0-1.3-3.7l1.4-1.4l-.8-.8l-1.4 1.4A6.9 6.9 0 0 0 12 2c-1.5 0-2.9.5-4.1 1.5M7 9v7H5v-5a2 2 0 0 1 2-2m12 0a2 2 0 0 1 2 2v5h-2V9M9 9h6v9H9zm-2 9a2 2 0 1 0 4 0zM13 20a2 2 0 1 0 4 0z"/></svg>
+              </div>
+              <h3>Android Development</h3>
+              <div class="progress-wrap">
+                <div class="progress-bar" style="--value: 80"></div>
+                <div class="progress-circle" style="--value: 80"><span>80%</span></div>
+              </div>
+            </article>
+
+            <article class="skill-card reveal" data-skill="Desktop" data-level="75">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5l2 3v1H7v-1l2-3H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 2v10h16V5z"/></svg>
+              </div>
+              <h3>Desktop Programming</h3>
+              <div class="progress-wrap">
+                <div class="progress-bar" style="--value: 75"></div>
+                <div class="progress-circle" style="--value: 75"><span>75%</span></div>
+              </div>
+            </article>
+
+            <article class="skill-card reveal" data-skill="Scraping" data-level="85">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7zm1 5v4l3 3l-1.4 1.4L11 12.6V8z"/></svg>
+              </div>
+              <h3>Web Scraping & Data Extraction</h3>
+              <div class="progress-wrap">
+                <div class="progress-bar" style="--value: 85"></div>
+                <div class="progress-circle" style="--value: 85"><span>85%</span></div>
+              </div>
+            </article>
+
+            <article class="skill-card reveal" data-skill="AI" data-level="70">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a5 5 0 0 1 5 5h1a3 3 0 0 1 0 6h-1v3a3 3 0 0 1-3 3h-1v2h-2v-2H9a3 3 0 0 1-3-3v-3H5a3 3 0 0 1 0-6h1a5 5 0 0 1 5-5m-3 8h2v6H9zm4 0h2v6h-2z"/></svg>
+              </div>
+              <h3>AI Development (ML / LLM Integration)</h3>
+              <div class="progress-wrap">
+                <div class="progress-bar" style="--value: 70"></div>
+                <div class="progress-circle" style="--value: 70"><span>70%</span></div>
+              </div>
+            </article>
+
+            <article class="skill-card reveal" data-skill="Security" data-level="85">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l7 3v6c0 5-3.1 9.7-7 11c-3.9-1.3-7-6-7-11V5zM7 8v3c0 3.7 2.2 7.5 5 8.8c2.8-1.3 5-5.1 5-8.8V8l-5-2z"/></svg>
+              </div>
+              <h3>Secure Coding & Software Security</h3>
+              <div class="progress-wrap">
+                <div class="progress-bar" style="--value: 85"></div>
+                <div class="progress-circle" style="--value: 85"><span>85%</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Projects</h2>
+          <div class="grid-3 cards">
+            <article class="card reveal">
+              <div class="card-media placeholder" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Modern Web App + Database</h3>
+                <p>Secure authentication, ORM, and audit logging in a full-stack web app.</p>
+                <div class="tags"><span>Web</span><span>Security</span><span>DB</span></div>
+                <div class="card-actions">
+                  <a class="btn btn-ghost" href="#" aria-label="Demo project" title="Demo">Demo</a>
+                  <a class="btn btn-ghost" href="#" aria-label="Source code" title="Source">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-media placeholder" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Android App with Encryption</h3>
+                <p>User data protected with AES-GCM and biometric keystore.</p>
+                <div class="tags"><span>Android</span><span>Crypto</span></div>
+                <div class="card-actions">
+                  <a class="btn btn-ghost" href="#">Demo</a>
+                  <a class="btn btn-ghost" href="#">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-media placeholder" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Web Scraping Toolkit</h3>
+                <p>Lightweight anti-bot bypass, proxy rotation, and CSV/JSON export.</p>
+                <div class="tags"><span>Scraping</span><span>Automation</span></div>
+                <div class="card-actions">
+                  <a class="btn btn-ghost" href="#">Demo</a>
+                  <a class="btn btn-ghost" href="#">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-media placeholder" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>AI Mini-project: Secure Chatbot</h3>
+                <p>LLM guardrails, basic red-teaming, and prompt sanitization.</p>
+                <div class="tags"><span>AI</span><span>Security</span></div>
+                <div class="card-actions">
+                  <a class="btn btn-ghost" href="#">Demo</a>
+                  <a class="btn btn-ghost" href="#">Source</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Owner’s Gallery</h2>
+          <div class="badges-inline reveal" role="tablist" aria-label="Albums">
+            <button class="btn btn-ghost" data-album-filter="all" aria-selected="true">All</button>
+            <button class="btn btn-ghost" data-album-filter="profile">Portraits</button>
+            <button class="btn btn-ghost" data-album-filter="travel">Travel</button>
+            <button class="btn btn-ghost" data-album-filter="campus">Campus</button>
+          </div>
+          <div class="grid-3 cards gallery-grid">
+            <figure class="card reveal" data-album="profile">
+              <img src="assets/img/potrait_1.jpeg" alt="Portrait 1" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Portrait — Holiday</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="profile">
+              <img src="assets/img/potrait_2.jpeg" alt="Portrait 2" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Portrait — Mirror</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="profile">
+              <img src="assets/img/potrait_3.jpeg" alt="Portrait 3" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Portrait — Ied</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="profile">
+              <img src="assets/img/potrait_4.jpeg" alt="Portrait 4" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Portrait — Sport</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="travel">
+              <img src="assets/img/travel_1.jpeg" alt="Travel 1" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Travel — Mountain</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="travel">
+              <img src="assets/img/travel_2.jpeg" alt="Travel 2" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Travel — River</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="travel">
+              <img src="assets/img/travel_3.jpeg" alt="Travel 3" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Travel — Beach</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="travel">
+              <img src="assets/img/travel_4.jpeg" alt="Travel 4" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Travel — Mountain</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="travel">
+              <img src="assets/img/travel_5.jpeg" alt="Travel 5" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Travel — Mountain</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="campus">
+              <img src="assets/img/campus_1.jpeg" alt="Campus 1" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Campus — Event</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="campus">
+              <img src="assets/img/campus_2.jpeg" alt="Campus 2" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Campus — Exhibition</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="campus">
+              <img src="assets/img/campus_3.jpeg" alt="Campus 3" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Campus — Day-off</figcaption>
+            </figure>
+            <figure class="card reveal" data-album="campus">
+              <img src="assets/img/campus_4.jpeg" alt="Campus 4" loading="lazy" decoding="async" />
+              <figcaption class="card-body">Campus — Drumband</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Life Timeline -->
+      <section id="timeline" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Life Timeline — Schools from Early Years to College</h2>
+          <p class="section-subtitle reveal">This is the long educational journey that I have been on</p>
+
+          <ol class="timeline">
+            <li class="tl-item reveal">
+              <div class="tl-node" aria-hidden="true"></div>
+              <div class="tl-card card">
+                <div class="card-body">
+                  <h3>Kindergarten</h3>
+                  <p><strong>Year:</strong> 2008–2009</p>
+                  <p><strong>School:</strong> TKIT Nurul Islam, Yogyakarta City</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="tl-item reveal">
+              <div class="tl-node" aria-hidden="true"></div>
+              <div class="tl-card card">
+                <div class="card-body">
+                  <h3>Primary School</h3>
+                  <p><strong>Year:</strong> 2010–2015</p>
+                  <p><strong>School:</strong> SDIT Alam Nurul Islam, Yogyakarta City</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="tl-item reveal">
+              <div class="tl-node" aria-hidden="true"></div>
+              <div class="tl-card card">
+                <div class="card-body">
+                  <h3>Junior High School</h3>
+                  <p><strong>Year:</strong> 2016–2018</p>
+                  <p><strong>School:</strong> SMPIT Alam Nurul Islam, Yogyakarta City</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="tl-item reveal">
+              <div class="tl-node" aria-hidden="true"></div>
+              <div class="tl-card card">
+                <div class="card-body">
+                  <h3>Senior High School</h3>
+                  <p><strong>Year:</strong> 2019–2021</p>
+                  <p><strong>School:</strong> Miftahunnajah IBS, Yogyakarta City</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="tl-item reveal">
+              <div class="tl-node" aria-hidden="true"></div>
+              <div class="tl-card card">
+                <div class="card-body">
+                  <h3>University — Cryptography Engineering</h3>
+                  <p><strong>Year:</strong> 2022–Now</p>
+                  <p><strong>Institution:</strong> State Polytechnic of Cyber and Crypto, Bogor</p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Publications & Achievements -->
+      <section id="publications" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Publications & Achievements</h2>
+          
+          <div class="achievements">
+            <div class="achievement reveal">
+              <span class="emoji">📖</span>
+              <div>
+                <h3>Publish Paper</h3>
+                <p>Rekonstruksi Langkah Penyelesaian Pertidaksamaan Kuadrat Berbantuan Aljabar</p>
+                <p><strong>Access:</strong> <a href="https://doi.org/10.26877/imajiner.v4i2.9930" target="_blank" rel="noopener">https://doi.org/10.26877/imajiner.v4i2.9930</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievements">
+            <div class="achievement reveal">
+              <span class="emoji">🎖️</span>
+              <div>
+                <h3>Organizational Role</h3>
+                <p>Sekretaris dan Bendahara OSIS Miftahunnajah IBS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievements">
+            <div class="achievement reveal">
+              <span class="emoji">🎖️</span>
+              <div>
+                <h3>Organizational Role</h3>
+                <p>Staf Khusus KPALH Baprakecwara Politeknik Siber dan Sandi Negara</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievements">
+            <div class="achievement reveal">
+              <span class="emoji">🎖️</span>
+              <div>
+                <h3>Organizational Role</h3>
+                <p>Staf Khusus Bendahara Senat Korps Taruna Politeknik Siber dan Sandi Negara</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Testimonials / Proof of Work</h2>
+          <div class="grid-3 testimonials">
+            <figure class="testimonial reveal">
+              <blockquote>“Neat collaboration, measurable outcomes, and strong attention to security.”</blockquote>
+              <figcaption>— Academic Supervisor</figcaption>
+            </figure>
+            <figure class="testimonial reveal">
+              <blockquote>“Fast problem-solver, easy to discuss technical ideas with.”</blockquote>
+              <figcaption>— Collaboration Partner</figcaption>
+            </figure>
+            <figure class="testimonial placeholder reveal">
+              <blockquote>Your first client’s testimonial will appear here.</blockquote>
+              <figcaption>— Your Next Client</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stories (Life Blog) -->
+      <section id="stories" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Stories — Chapters of My Journey</h2>
+          <div class="grid-3 cards">
+            <article class="card reveal">
+              <img src="https://picsum.photos/seed/story1/640/400" alt="Story 1" loading="lazy" />
+              <div class="card-body">
+                <h3>From Curiosity to Code</h3>
+                <p>How tinkering with puzzles led me to cryptography and secure software.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="https://picsum.photos/seed/story2/640/400" alt="Story 2" loading="lazy" />
+              <div class="card-body">
+                <h3>Late Nights, Bright Ideas</h3>
+                <p>Balancing campus life, research, and freelance projects.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="https://picsum.photos/seed/story3/640/400" alt="Story 3" loading="lazy" />
+              <div class="card-body">
+                <h3>Security First Mindset</h3>
+                <p>Why secure coding principles guide every project I build.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Blog / Articles -->
+      <section id="blog" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Tech Blog</h2>
+          <div class="grid-3 cards">
+            <article class="card reveal">
+              <div class="card-body">
+                <h3>Secure Coding Checklist for New Projects</h3>
+                <p>Input validation, auth, secrets, logging, dependency hygiene, and more.</p>
+                <a class="btn btn-ghost" href="#">Read</a>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-body">
+                <h3>LLM Integration: Guardrails 101</h3>
+                <p>Prompt sanitization, content filters, and audit trails for AI features.</p>
+                <a class="btn btn-ghost" href="#">Read</a>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-body">
+                <h3>Ethical & Effective Web Scraping</h3>
+                <p>Respect robots, rate limiting, and reasonable anti-bot strategies.</p>
+                <a class="btn btn-ghost" href="#">Read</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Studies -->
+      <section id="case-studies" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Case Studies</h2>
+          <div class="grid-2 cases">
+            <article class="case reveal">
+              <h3>Scraping Research with Anti-bot Bypass</h3>
+              <p>Resilient scraping with fingerprint rotation, proxies, and retry with backoff.</p>
+              <ul class="bullets small">
+                <li>Outcome: 10k+ clean records for analysis</li>
+                <li>Stack: Python, Playwright, Proxies</li>
+              </ul>
+            </article>
+            <article class="case reveal">
+              <h3>Android App with User Data Encryption</h3>
+              <p>AES-GCM with keys stored in Keystore + biometrics.</p>
+              <ul class="bullets small">
+                <li>Outcome: Zero plaintext-at-rest</li>
+                <li>Stack: Kotlin, Jetpack, Keystore</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Hire Me -->
+      <section id="why-me" class="section">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title reveal">Why Hire Me?</h2>
+            <ul class="bullets reveal">
+              <li>Security-first mindset (rare among freelancers)</li>
+              <li>Blend of academic research and practical delivery</li>
+              <li>Multi-domain: web, mobile, AI, security</li>
+              <li>Futuristic design with dark mode</li>
+            </ul>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-row">
+              <span>Reliability</span>
+              <div class="meter"><span style="--value: 92%"></span></div>
+            </div>
+            <div class="why-row">
+              <span>Security-first</span>
+              <div class="meter"><span style="--value: 88%"></span></div>
+            </div>
+            <div class="why-row">
+              <span>Innovation</span>
+              <div class="meter"><span style="--value: 86%"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title reveal">Contact Me</h2>
+            <p class="reveal">Open to projects and collaboration. Use the form, or reach out via email/LinkedIn.</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a id="emailLink" href="mailto:hanifabdulkarimafandi@gmail.com">hanifabdulkarimafandi@gmail.com</a></li>
+              <li><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/username</a></li>
+            </ul>
+          </div>
+          <form id="contactForm" class="card form-card reveal" aria-label="Contact form">
+            <label>Name
+              <input type="text" name="name" required placeholder="Full name" />
+            </label>
+            <label>Email
+              <input type="email" name="email" required placeholder="email@domain.com" inputmode="email" autocomplete="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" />
+            </label>
+            <label>Message
+              <textarea name="message" rows="5" required placeholder="Tell me about your needs/project..." ></textarea>
+            </label>
+            <!-- Honeypot field to reduce spam (leave empty) -->
+            <div style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
+              <label>Do not fill this field if you are human
+                <input type="text" name="hp_field" tabindex="-1" autocomplete="off" />
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Hire Me</button>
+              <button type="button" id="copyEmail" class="btn btn-ghost">Copy Email</button>
+            </div>
+            <p id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Hanif Abdul Karim Afandi</span>
+  <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+
+  <script src="assets/js/main.js?v=20250818c"></script>
+  </body>
+  </html>
